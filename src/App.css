@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
-
 * {
   transition: all 0.2s ease;
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
   background: #f2f2f2 !important;
   color: black !important;
   overflow-y: hidden;
@@ -17,6 +14,11 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 22px;
 }
 
 .results {
@@ -43,16 +45,16 @@ input {
   overflow-y: auto;
   max-height: 10rem;
   width: 20rem;
+  border-radius: 0;
 }
 
 .y-overflow::-webkit-scrollbar {
-  background: white;
+  background: transparent;
   width: 0.25rem;
 }
 
 .y-overflow::-webkit-scrollbar-thumb {
   background-color: #b0c8d1;
-  outline: 1px solid black;
 }
 
 .rs-panel {
@@ -94,16 +96,24 @@ input {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -201px;
-  margin-top: -130px;
+  margin-left: -200px;
+  margin-top: -164px;
 }
 
-.modal-body .rs-avatar {
+.rs-avatar-lg {
   width: 120px;
   height: 120px;
 }
 
-.modal-body .rs-avatar > .modal-body .rs-avatar-image {
+.rs-avatar-lg > .rs-avatar-image {
   width: 120px;
   height: 120px;
+}
+
+.rs-divider {
+  background-color: #b0c8d1;
+}
+
+small {
+  color: #888888;
 }
