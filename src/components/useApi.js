@@ -27,13 +27,11 @@ const useApi = (query, pageNumber) => {
             }
           }
         )
-        // console.log(data)
         data.results.map((character) => {
           setCharacterList((prev) => {
             return [...new Set([...prev, character.name])]
           })
         })
-        // console.log(characterList)
         setCharacters((previous) => {
           return [...previous, ...data.results]
         })
